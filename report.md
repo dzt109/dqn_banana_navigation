@@ -14,14 +14,17 @@ This repository is an example of using PyTorch and Unity ML-Agents for implement
 
 ### Repository contents
 
-The repository includes the following DQN related files:
-- `dqn_agent.py` -> dqn-agent implementation
-- `model.py` -> example PyTorch neural network for vector based DQN learning
-- `Navigation.ipynb` -> Python notebook for training and testing the DQN-agent.
-- `banana_player_model.pth` -> saved weights for trained model.
-- `report.md` -> This file.
-- `Banana.exe` -> Banana Unity environment. [(Reference)](https://github.com/Unity-Technologies/ml-agents)
+The repository includes the following relevant files:
 
+| Filename| Description | 
+|:----|:----------|
+|`dqn_agent.py` | dqn-agent implementation |
+| `model.py` | PyTorch neural network for vector based DQN learning. |
+| `Navigation.ipynb` | Python notebook for training and testing the DQN-agent. |
+| `banana_player_model.pth` | saved weights for trained model. |
+| `Readme.md` | This file.|
+| `report.md` | Report file.|
+| `Banana.exe` | Banana Unity environment. [(Reference)](https://github.com/Unity-Technologies/ml-agents)|
 
 ## Background
 
