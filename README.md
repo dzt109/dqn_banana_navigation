@@ -20,6 +20,7 @@ The repository includes the following DQN related files:
 - `Navigation.ipynb` -> Python notebook for training and testing the DQN-agent.
 - `banana_player_model.pth` -> saved weights for trained model.
 - `Readme.md` -> This file.
+- `report.md` -> Report file.
 - `Banana.exe` -> Banana Unity environment. [(Reference)](https://github.com/Unity-Technologies/ml-agents)
 
 
