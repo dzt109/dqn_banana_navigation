@@ -37,31 +37,31 @@ The table below lists the hyperparameters used in the model. A brief description
 
 | No. | Parameter | Value | 
 |:----|:----------|:------|
-|1| `eps\_start`     |1   |
-|2| `eps\_end`       |0.01|
-|3| `eps\_decay`     |0.995  |
-|4| `num\_episodes`  |2000   |
-|5| `max\_score`     |13     |
-|6| `BUFFER\_SIZE`   |1e5    |
-|7| `BATCH\_SIZE`    |64     |
+|1| `eps_start`     |1   |
+|2| `eps_end`       |0.01|
+|3| `eps_decay`     |0.995  |
+|4| `num_episodes`  |2000   |
+|5| `max_score`     |13     |
+|6| `BUFFER_SIZE`   |1e5    |
+|7| `BATCH_SIZE`    |64     |
 |8| `GAMMA`         |0.99   |
 |9| `TAU`           |1e-3   |
 |10| `LR`           |5e-4   |
 |11| `UPDATE_EVERY` |4      |
-|12| `fc1\_units`    |64     |
-|13| `fc2\_units`    |64     |
+|12| `fc1_units`    |64     |
+|13| `fc2_units`    |64     |
 
--  `eps\_start`, `eps\_end`, `eps\_decay`   The probability of choosing a random action will start at EPS\_START and will decay exponentially towards EPS\_END. EPS\_DECAY controls the rate of the decay.
-- `num\_episodes`: Number of episodes after which the algorithm will terminate regardless of whether the goal (average `max\_score`) was achieved.
-- `max\_score`: The target average score   
-- `BUFFER\_SIZE`: Memory size for experience replay, a random sample of prior actions instead of the most recent action to proceed. 
-- `BATCH\_SIZE`: Batch size for optimization. Smaller batch size affected convergence stability. Larger batch size made the process very slow.   
+-  `eps_start`, `eps_end`, `eps_decay`   The probability of choosing a random action will start at eps_start and will decay exponentially towards eps_end. eps_decay controls the rate of the decay.
+- `num_episodes`: Number of episodes after which the algorithm will terminate regardless of whether the goal (average `max_score`) was achieved.
+- `max_score`: The target average score   
+- `BUFFER_SIZE`: Memory size for experience replay, a random sample of prior actions instead of the most recent action to proceed. 
+- `BATCH_SIZE`: Batch size for optimization. Smaller batch size affected convergence stability. Larger batch size made the process very slow.   
 - `GAMMA`: Discount factor for future rewards.       
 - `TAU` : parameter for soft update of target parameters        
 - `LR`: Learning rate for the above algorithm. Values from 0.01 to 0.1 were tried. Larger values were detrimental to getting a good final accuracy.          
-- `UPDATE\_EVERY`: How often to update the network
-- `fc1\_units`: Number of neurons in the first hidden layer of the neural network. 
-- `fc2\_units`: Number of neurons in the seocnd hidden layer of the neural network. 
+- `UPDATE_EVERY`: How often to update the network
+- `fc1_units`: Number of neurons in the first hidden layer of the neural network. 
+- `fc2_units`: Number of neurons in the seocnd hidden layer of the neural network. 
 
 
 ### Environment
@@ -88,22 +88,22 @@ Following are instructions for installing the environment that has been tested i
 
 2. Create (and activate) a new conda environment called `drlnd`.
 		
-		`conda create --name drlnd python=3.6`
+`conda create --name drlnd python=3.6`
 	
-		`activate drlnd`
+`activate drlnd`
 
 3. Clone this GitHub repository.
-	`git clone https://github.com/dzt109/banana_navigation.git.`
+`git clone https://github.com/dzt109/banana_navigation.git.`
 
 4. Navigate to the cloned repository, change to the `.python/` subdirectory and install dependencies 
 		
-		`pip3 install .`
+`pip3 install .`
 
 5. Install `pytorch` and `unityagents`
 
-	`conda install -y pytorch -c pytorch`
+`conda install -y pytorch -c pytorch`
 
-	`pip install torchsummary unityagents`
+`pip install torchsummary unityagents`
 
 6. Download the Banana environment. For this example project, you will not need to install Unity - this is because you can use a version of the Banana's unity environment that is already built (compiled) as a standalone application. Select the one that is appropriate for your operating system:
 
@@ -117,7 +117,7 @@ Following are instructions for installing the environment that has been tested i
 
 8. Start jupyter notebook from the `drlnd` conda environment
  
-	`jupyter notebook`
+`jupyter notebook`
    
 9. Launch the file `Navigation.ipynb`.
  
