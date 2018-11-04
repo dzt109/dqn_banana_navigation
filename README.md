@@ -37,8 +37,8 @@ The table below lists the hyperparameters used in the model. A brief description
 
 | No. | Parameter | Value | 
 |:----|:----------|:------|
-|1| `eps\_start`     |1   	  |
-|2| `eps\_end`       |0.01	  |
+|1| `eps\_start`     |1   |
+|2| `eps\_end`       |0.01|
 |3| `eps\_decay`     |0.995  |
 |4| `num\_episodes`  |2000   |
 |5| `max\_score`     |13     |
@@ -127,7 +127,7 @@ Following are instructions for installing the environment that has been tested i
 1. Run the notebook cell by cell and observe the results. 
 2. Training happens in Cell 9, and completes when agents achieve an average score of *solved_score* over 100 runs.
 3. The weights of the trained model are stored in the file: `banana_player_model.pth`
-4. Cell 10 shows a plot of the scores achieved by the agent. The plot should look similar to the one shown below. While the training is going on, the output of the unity environment should look similar to [this video](https://www.youtube.com/watch?v=JHAdmHcH8g8&feature=youtu.be) The video is also available [here.](media/banana_training.avi)
+4. Cell 10 shows a plot of the scores achieved by the agent. The plot should look similar to the one shown below. While the training is going on, the output of the unity environment should look similar to [this video](https://www.youtube.com/watch?v=JHAdmHcH8g8&feature=youtu.be) 
 5. Hyperparameters are present in `Navigation.ipynb`, `model.py` and `dqn_agent.py`. The training could be rerun after changing the hyperparameters. It is advised to change the weights `.pth` filename every time so that the model is not overwritten
  
  
@@ -144,7 +144,12 @@ Following are instructions for installing the environment that has been tested i
 
  ![Example of agent performance (score) as a function of training episodes](media/solved_banana.gif)
 
+A longer video is available [here](https://www.youtube.com/watch?v=-DDHbOAvAj0&feature=youtu.be)
+
 ## Ideas for Future Work
+
+It is possible to get a much higher average score than the required 13.0 with the current algorithm and hyperparameters. One idea for future work would be to explore the maximum average score achievable with current algorithms and settings. 
+During the testing phase, it was found that sometimes the agents gets surrounded by purple bananas and therefore gets stuck. While that might well be a locally optimal policy, it is not clear if that is the globally optimal policy. It certainly is not a fun policy. Modifications to the rewards could be made to encourage the agent to keep moving. 
 
 A few other things that would be interesting to try: 
 
