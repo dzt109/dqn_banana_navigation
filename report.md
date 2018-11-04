@@ -22,8 +22,8 @@ The repository includes the following relevant files:
 | `model.py` | PyTorch neural network for vector based DQN learning. |
 | `Navigation.ipynb` | Python notebook for training and testing the DQN-agent. |
 | `banana_player_model.pth` | saved weights for trained model. |
-| `Readme.md` | This file.|
-| `report.md` | Report file.|
+| `Readme.md` | Readme file.|
+| `report.md` | This file.|
 | `Banana.exe` | Banana Unity environment. [(Reference)](https://github.com/Unity-Technologies/ml-agents)|
 
 ## Background
