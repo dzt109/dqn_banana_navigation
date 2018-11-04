@@ -130,6 +130,7 @@ Following are instructions for installing the environment that has been tested i
 4. Cell 10 shows a plot of the scores achieved by the agent. The plot should look similar to the one shown below. While the training is going on, the output of the unity environment should look similar to [this video](https://www.youtube.com/watch?v=JHAdmHcH8g8&feature=youtu.be) 
 5. Hyperparameters are present in `Navigation.ipynb`, `model.py` and `dqn_agent.py`. The training could be rerun after changing the hyperparameters. It is advised to change the weights `.pth` filename every time so that the model is not overwritten
  
+ With the parameters set as in the file `Navigation.ipynb`, the target average score should be achieved within 300-600 episodes. 
  
  ![Example of agent performance (score) as a function of training episodes](media/scores_1.png)
 
